@@ -20,7 +20,13 @@ Ubuntu > 18.04
 
 Exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
-Logo após fazer o clone, usar o seguinte comando:
+Logo após fazer o clone, usar os seguintes comandos abaixo:
+
+
+Usar este comando para o problema que ocorre devido as diferenças no registro da quebra de linha feito pelo Windows e pelo Linux. Para resolver, vamos utilizar uma expressão regular e o comando SED:
+```
+sed -i -e 's/\r$//' ./preparar-ambiente.sh
+```
 
 ```
 ./preparar-ambiente.sh
@@ -29,7 +35,7 @@ Logo após fazer o clone, usar o seguinte comando:
 Logo em seguida, usar o comando abaixo para ativar o ambiente:
 
 ```
-./ativar-ambiente
+./ativar-ambiente.sh
 ```
 
 
