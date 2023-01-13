@@ -42,5 +42,3 @@ Logo em seguida, usar o comando abaixo para ativar o ambiente:
 ```
 source ./ativar-ambiente.sh
 ```
-
-
