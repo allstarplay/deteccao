@@ -35,7 +35,7 @@ sed -i -e 's/\r$//' ./preparar-ambiente.sh
 Logo em seguida, usar o comando abaixo para ativar o ambiente:
 
 ```
-./ativar-ambiente.sh
+source ./ativar-ambiente.sh
 ```
 
 
