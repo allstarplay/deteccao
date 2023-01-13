@@ -1,4 +1,4 @@
-# Detecção deplacas
+# Detecção de placas
 
 Projeto responsável por fazer detecção de placas
 
