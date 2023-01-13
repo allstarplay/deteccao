@@ -28,8 +28,13 @@ Usar este comando para o problema que ocorre devido as diferenças no registro d
 sed -i -e 's/\r$//' ./preparar-ambiente.sh
 ```
 
+Usar este comando para preparar o ambiente ou o comando abaixo:
 ```
 ./preparar-ambiente.sh
+```
+ ou
+```
+make preparar-ambiente
 ```
 
 Logo em seguida, usar o comando abaixo para ativar o ambiente:
@@ -37,5 +42,3 @@ Logo em seguida, usar o comando abaixo para ativar o ambiente:
 ```
 source ./ativar-ambiente.sh
 ```
-
-
