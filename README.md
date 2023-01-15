@@ -1,4 +1,4 @@
-# Detecção de placas
+# Nanascreen
 
 Projeto responsável por fazer detecção de placas
 
