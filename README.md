@@ -1,4 +1,4 @@
-# Detecção de placas
+# Nanascreen
 
 Projeto responsável por fazer detecção de placas
 
@@ -38,3 +38,5 @@ Logo em seguida, usar o comando abaixo para ativar o ambiente:
 ```
 source ./ativar-ambiente.sh
 ```
+
+###### Autor: George Augusto da Silva
