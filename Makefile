@@ -12,3 +12,9 @@ venv:
 limpar-venv:
 	rm -rf venv
 
+requirements-dev:
+	python -m pip install --upgrade pip
+	pip install -r requirements/develop.txt
+
+pip-upgrade:
+	pip install -U pytest
