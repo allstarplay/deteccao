@@ -25,22 +25,35 @@ Logo após fazer o clone, usar os seguintes comandos abaixo:
 
 Usar este comando para o problema que ocorre devido as diferenças no registro da quebra de linha feito pelo Windows e pelo Linux. Para resolver, vamos utilizar uma expressão regular e o comando SED:
 ```
-sed -i -e 's/\r$//' ./preparar-ambiente.sh
+sed -i -e 's/\r$//' ./pre-lin.sh
 ```
 
 Usar este comando para preparar o ambiente ou o comando abaixo:
 ```
-./preparar-ambiente.sh
-```
- ou
-```
-make preparar-ambiente
+./pre-lin.sh
 ```
 
 Logo em seguida, usar o comando abaixo para ativar o ambiente:
+```
+source ./act-lin.sh
+```
+##### *Obs: Para agilizar o uso, recomenda-se recortar o act-lin.sh ou act-win.sh e colocar na raiz do projeto.
+<br/>
+
+Instala os pacotes:
+```
+make req-dev
+```
+
+Copie o arquivo dotenv.dev para o arquivo .env4
+```
+cp ./devtools/dotenv.dev .env
+```
+ou
 
 ```
-source ./ativar-ambiente.sh
+make cp
 ```
+
 
 ###### Autor: George Augusto da Silva

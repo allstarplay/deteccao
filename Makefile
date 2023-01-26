@@ -1,20 +1,22 @@
-preparar-ambiente:	
-	sudo apt update
-	sudo apt -y upgrade
-	sudo apt install python3.11
-	python3 -V
-	sudo apt install -y python3.11-venv
-	python3 -m venv venv
-
 venv:
-	python3 -m venv venv
+	python -m venv venv
 
-limpar-venv:
+clear-venv:
 	rm -rf venv
 
-requirements-dev:
+req-dev: clear-venv	
+	python -m venv venv
 	python -m pip install --upgrade pip
 	pip install -r requirements/develop.txt
 
-pip-upgrade:
-	pip install -U pytest
+cp:
+	cp ./devtools/dotenv.dev .env
+
+
+# Instala pacotes pessoal em modo editavel
+e:
+	pip install -e .
+
+# Instala pacotes pessoal na lista de pacotes do pip
+i:
+	pip install .
